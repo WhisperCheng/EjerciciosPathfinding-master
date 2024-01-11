@@ -11,7 +11,7 @@ public class Movimieno : MonoBehaviour
     void Start()
     {
         cuerpo = GetComponent<Rigidbody>();
-        velocidad = 3;
+        velocidad = 3.5f;
     }
 
     // Update is called once per frame

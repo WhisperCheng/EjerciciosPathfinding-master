@@ -164,7 +164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 458085589}
   m_Layer: 0
-  m_Name: Punto
+  m_Name: Spawn
   m_TagString: Punto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,7 +179,7 @@ Transform:
   m_GameObject: {fileID: 458085588}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.5, y: -5.770748, z: 2.5}
+  m_LocalPosition: {x: 5.7, y: -5.770748, z: 0.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -426,10 +426,10 @@ GameObject:
   - component: {fileID: 701623232}
   - component: {fileID: 701623231}
   - component: {fileID: 701623230}
+  - component: {fileID: 701623233}
   - component: {fileID: 701623229}
-  - component: {fileID: 701623228}
   m_Layer: 0
-  m_Name: Heroe
+  m_Name: Bicho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -443,32 +443,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701623226}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.15, y: 0.283, z: -4.06}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.085791, y: -5.526984, z: 2.6151402}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1753890658}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &701623228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 701623226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d9a21a0dc99fab48a16ee73e9b6feca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  listaVectores:
-  - {x: 7.5, y: -5.770748, z: 2.5}
-  - {x: 7.5, y: -5.770748, z: 7.5}
-  - {x: 12.5, y: -5.770748, z: 7.5}
-  - {x: 12.5, y: -5.770748, z: 2.5}
-  agente: {fileID: 701623229}
-  objetivo: {fileID: 1187788269}
 --- !u!195 &701623229
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -564,6 +545,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701623226}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &701623233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701623226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a0f5922ba105e40ba12851951f3eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 701623229}
+  objetivo: {fileID: 1187788269}
 --- !u!1 &998654545
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +605,7 @@ GameObject:
   - component: {fileID: 1187788276}
   - component: {fileID: 1187788275}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Personaje
   m_TagString: Personaje
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -625,11 +620,11 @@ Transform:
   m_GameObject: {fileID: 1187788269}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.22231007, y: 0.47, z: -0.5524721}
+  m_LocalPosition: {x: 10.12579, y: -5.3399844, z: 4.07514}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1753890658}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1187788272
 CapsuleCollider:
@@ -802,7 +797,7 @@ Transform:
   m_GameObject: {fileID: 1590142250}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1264305, y: -1.3200741, z: 1.9881957}
+  m_LocalPosition: {x: 1.1264305, y: -1.3200741, z: 2.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -867,9 +862,7 @@ Transform:
   m_LocalPosition: {x: 10.14579, y: -5.809984, z: 4.7951403}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 701623227}
-  - {fileID: 1187788270}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1776561605
@@ -972,6 +965,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 510024154}
   - {fileID: 1776561607}
+  - {fileID: 701623227}
+  - {fileID: 1187788270}
   - {fileID: 1557098785}
   - {fileID: 1753890658}
   - {fileID: 666551319}

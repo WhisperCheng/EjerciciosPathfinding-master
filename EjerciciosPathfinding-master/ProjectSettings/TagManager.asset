@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Punto
   - Personaje
+  - Paredes
   layers:
   - Default
   - TransparentFX
